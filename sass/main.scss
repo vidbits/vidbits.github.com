@@ -1,6 +1,46 @@
+@import "compass/reset";
+@import "colors";
+@import "header";
+
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
-  font-weight: 300;
-  width: 460px;
+  line-height: 24px;
+  font-weight: 200;
+  background: $body-bg;
+  color: $body-color;
+}
+a, a:visited {
+  text-decoration: none;
+}
+a:focus, a:hover {
+  text-decoration: underline;
+}
+h1, h2, h3 {
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+h1 {
+  font-size: 36px;
+  line-height: 48px;
+  
+  a, a:visited, a:focus, a:hover {
+    color: $body-color;
+  }
+}
+h2 {
+  font-size: 22px;
+}
+.container{
+  width:960px;
+  margin:auto;
+}
+.right {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+#content {
+  margin-top: 64px;
 }

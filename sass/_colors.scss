@@ -1,0 +1,131 @@
+$light-gray     : #CCCCCC;
+$middle-gray    : #AAAAAA;
+$lightest-gray  : #EEEEEE;
+$border-gray    : #EAEAEA;
+$fallback-gray  : #BBBBBB;
+$dark-gray      : #DDDDDD;
+$darkest-gray   : #777777;
+$off-white      : #F9F9F9;
+$white          : #FFFFFF;
+$light-blue     : #E1EFFF;
+$blue-gray      : #E0ECF0;
+$light-yellow   : #FDF7A8;
+$deep-blue      : #335499;
+$light-green    : #D8FFD7;
+$off-black      : #231f20;
+$darkish-black  : #999999;
+$dark-overlay: rgba(40, 40, 40, 0.9);
+$light-black    : #555555;
+$evil-gray      : #666666;
+
+// General
+$body-bg	            : $white;
+$body-color           : $off-black;
+$content-bg           : #FFFFFF;
+$divider				      : $dark-gray;
+$tooltip-bg				    : $darkest-gray;
+$secondary-text-color : $darkest-gray;
+$notice 				      : $middle-gray;
+$input-border-color   : $dark-gray;
+$text-shadow-on-white : rgba(0, 0, 0, 0.2);
+$darken-border-fallback: $dark-gray;
+$darken-border        : rgba(0, 0, 0, 0.1);
+$highlight-color      : $light-yellow;
+
+// Sidebar
+$side-header-color 		: $lightest-gray;
+
+// Header
+$logo-purple : #965D97;
+$logo-orange : #D8971A;
+$logo-blue   : #009AD4;
+
+$nav-gradient-start : #666;
+$nav-gradient-end   : #333;
+$nav-fallback       : $nav-gradient-end;
+
+$header-border-bottom:$light-gray;
+
+$link-color: $deep-blue;
+
+// Widget
+$analytics-nav-bg-fallback: $lightest-gray;
+$analytics-nav-bg: rgba(240, 240, 242, 0.85);
+$widget-header-bg: #EDECEA;
+$widget-border-color: $light-gray;
+
+// Poll page
+$video-bg: $dark-gray;
+$option-hover: $light-blue;
+
+$next-poll-bg: $light-green;
+$next-poll-border:$dark-gray;
+
+
+// Comments
+$comment-border:$dark-gray;
+$thread-color:$dark-gray;
+
+// Forms
+$input-bg: $dark-gray;
+
+// Social Buttons
+$facebook-blue: #3B5998;
+$twitter-green: #4099FF;
+
+// Tabs
+$tab-bg:$middle-gray;
+$tab-border:$dark-gray;
+$tab-selected:$light-gray;
+
+// Tables
+$table-row:$off-white;
+$row-hover:$light-blue;
+
+// Liking
+$liked-color:#00adf0;
+
+// Buttons
+$button-border:                 #50788A;
+$button-color:                  #3B5966;
+$button-start:                  #fff;
+$button-end:                    #e6e6e6;
+$button-fallback:               $button-end;
+$call-to-action-start:          rgb(209, 72, 54);
+$call-to-action-end:            rgb(221, 75, 57);
+$call-to-action-fallback:       $call-to-action-start;
+$call-to-action-border:         #8A5050;
+$call-to-action-hover-start:    rgb(231, 72, 54);
+$call-to-action-hover-end:      rgb(211, 75, 57);
+$call-to-action-hover-fallback: $call-to-action-start;
+
+// footer
+$footer-text-color: $darkest-gray;
+$here-now-fallback: $off-black;
+$here-now-bg:       $dark-overlay;
+$here-now-color:    $lightest-gray;
+
+@mixin header-background {
+  background-color: $nav-gradient-end;
+  border-bottom:1px solid $header-border-bottom;
+  background:-webkit-linear-gradient(top, $nav-gradient-start, $nav-gradient-end);
+}
+
+/* Colors for success notice */
+.success {
+  background: #E6EFC2;
+  color: #264409;
+  border-color: #C6D880;
+}
+
+// social buttons
+$fb-connect-bg-color:         #3B5998;
+$fb-connect-bg-color-hover:   lighten($fb-connect-bg-color, 10%);
+$twtr-connect-bg-color:       #4099FF;
+$twtr-connect-bg-color-hover: lighten($twtr-connect-bg-color, 10%);
+
+// Overlays
+$overlay-bg-color:    rgba(0, 0, 0, 0.8);
+$overlay-bg-fallback: $off-black;
+$overlay-link-color:  #b9daff;
+$overlay-text-color:  $off-white;

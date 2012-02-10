@@ -1,6 +1,205 @@
-/* line 1, ../sass/main.scss */
+/* line 17, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* line 20, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1; }
+
+/* line 22, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 24, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 26, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 28, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 101, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 30, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 114, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* Colors for success notice */
+/* line 115, ../sass/_colors.scss */
+.success {
+  background: #E6EFC2;
+  color: #264409;
+  border-color: #C6D880; }
+
+/* line 1, ../sass/_header.scss */
+#nav {
+  width: 100%;
+  position: fixed;
+  z-index: 9999999;
+  top: 0;
+  height: 40px;
+  background: #333333;
+  background-image: -webkit-linear-gradient(#666666, #333333 50px);
+  background-image: -moz-linear-gradient(#666666, #333333 50px); }
+  /* line 10, ../sass/_header.scss */
+  #nav #dot {
+    float: left;
+    margin: 11px 5px 0 5px; }
+  /* line 14, ../sass/_header.scss */
+  #nav .right {
+    color: #FFF; }
+    /* line 16, ../sass/_header.scss */
+    #nav .right a {
+      float: left;
+      color: #FFF;
+      margin-top: 4px;
+      letter-spacing: 0.5px; }
+      /* line 21, ../sass/_header.scss */
+      #nav .right a:hover {
+        text-decoration: none;
+        color: #f9f9f9; }
+    /* line 26, ../sass/_header.scss */
+    #nav .right #tri {
+      float: right;
+      font-size: 10px;
+      color: #FFF;
+      margin: 13px 4px 0 10px; }
+  /* line 33, ../sass/_header.scss */
+  #nav img.avatar {
+    margin: 6px 16px 0 0;
+    float: left; }
+  /* line 37, ../sass/_header.scss */
+  #nav a {
+    text-decoration: none;
+    color: #EDEDED;
+    float: left;
+    font-size: 12px; }
+    /* line 42, ../sass/_header.scss */
+    #nav a:hover {
+      text-decoration: underline; }
+  /* line 46, ../sass/_header.scss */
+  #nav #bars {
+    float: left;
+    margin: -4px 7px 0 0; }
+    /* line 49, ../sass/_header.scss */
+    #nav #bars .bar {
+      width: 6px;
+      float: left; }
+      /* line 52, ../sass/_header.scss */
+      #nav #bars .bar.bar-purple {
+        background-color: #965d97;
+        height: 13px;
+        margin-top: 10px; }
+      /* line 57, ../sass/_header.scss */
+      #nav #bars .bar.bar-orange {
+        background-color: #d8971a;
+        height: 17px;
+        margin-top: 6px; }
+      /* line 62, ../sass/_header.scss */
+      #nav #bars .bar.bar-blue {
+        background-color: #009ad4;
+        height: 10px;
+        margin-top: 13px; }
+  /* line 69, ../sass/_header.scss */
+  #nav #logo {
+    padding: 8px 0 0 0px;
+    font-weight: 300;
+    color: #f9f9f9; }
+    /* line 73, ../sass/_header.scss */
+    #nav #logo a {
+      margin: -2px 0 0 0;
+      font-size: 20px; }
+      /* line 76, ../sass/_header.scss */
+      #nav #logo a:hover {
+        color: #eee;
+        text-decoration: underline; }
+  /* line 83, ../sass/_header.scss */
+  #nav .right img {
+    width: 26px;
+    height: 26px;
+    -webkit-border-radius: 3px; }
+  /* line 88, ../sass/_header.scss */
+  #nav .right a {
+    margin-top: 11px;
+    letter-spacing: 0.5px; }
+
+/* line 5, ../sass/main.scss */
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
-  font-weight: 300;
-  width: 460px; }
+  line-height: 24px;
+  font-weight: 200;
+  background: white;
+  color: #231f20; }
+
+/* line 13, ../sass/main.scss */
+a, a:visited {
+  text-decoration: none; }
+
+/* line 16, ../sass/main.scss */
+a:focus, a:hover {
+  text-decoration: underline; }
+
+/* line 19, ../sass/main.scss */
+h1, h2, h3 {
+  font-weight: bold;
+  margin-bottom: 24px; }
+
+/* line 23, ../sass/main.scss */
+h1 {
+  font-size: 36px;
+  line-height: 48px; }
+  /* line 27, ../sass/main.scss */
+  h1 a, h1 a:visited, h1 a:focus, h1 a:hover {
+    color: #231f20; }
+
+/* line 31, ../sass/main.scss */
+h2 {
+  font-size: 22px; }
+
+/* line 34, ../sass/main.scss */
+.container {
+  width: 960px;
+  margin: auto; }
+
+/* line 38, ../sass/main.scss */
+.right {
+  float: right; }
+
+/* line 41, ../sass/main.scss */
+.clear {
+  clear: both; }
+
+/* line 44, ../sass/main.scss */
+#content {
+  margin-top: 64px; }
