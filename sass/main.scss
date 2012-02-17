@@ -1,6 +1,10 @@
+$baseline: 24px;
+
 @import "compass/reset";
+@import "compass/css3/transition";
 @import "colors";
 @import "header";
+@import "layout";
 
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -16,24 +20,28 @@ a, a:visited {
 a:focus, a:hover {
   text-decoration: underline;
 }
+h1, h2, h3, p, ol, ul {
+  padding-bottom: $baseline;
+}
 h1, h2, h3 {
   font-weight: bold;
-  margin-bottom: 24px;
 }
 h1 {
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 30px;
+  line-height: $baseline * 1.5;
   
   a, a:visited, a:focus, a:hover {
     color: $body-color;
+    text-decoration: none;
+    @include transition-property(color);
+    @include transition-duration(0.2s);
+  }
+  a:focus, a:hover {
+    color: $link-color;
   }
 }
-h2 {
+h2, h3 {
   font-size: 22px;
-}
-.container{
-  width:960px;
-  margin:auto;
 }
 .right {
   float: right;

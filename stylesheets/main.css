@@ -153,7 +153,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-top: 11px;
     letter-spacing: 0.5px; }
 
-/* line 5, ../sass/main.scss */
+/* line 6, ../sass/_layout.scss */
+.container {
+  width: 906px;
+  margin: auto; }
+
+/* line 10, ../sass/_layout.scss */
+.column, #left-column, #right-column {
+  float: left;
+  overflow: hidden; }
+
+/* line 14, ../sass/_layout.scss */
+#left-column {
+  width: 460px;
+  padding-right: 96px; }
+
+/* line 19, ../sass/_layout.scss */
+#right-column {
+  width: 350px; }
+
+/* line 9, ../sass/main.scss */
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -162,44 +181,54 @@ body {
   background: white;
   color: #231f20; }
 
-/* line 13, ../sass/main.scss */
+/* line 17, ../sass/main.scss */
 a, a:visited {
   text-decoration: none; }
 
-/* line 16, ../sass/main.scss */
+/* line 20, ../sass/main.scss */
 a:focus, a:hover {
   text-decoration: underline; }
 
-/* line 19, ../sass/main.scss */
-h1, h2, h3 {
-  font-weight: bold;
-  margin-bottom: 24px; }
-
 /* line 23, ../sass/main.scss */
-h1 {
-  font-size: 36px;
-  line-height: 48px; }
-  /* line 27, ../sass/main.scss */
-  h1 a, h1 a:visited, h1 a:focus, h1 a:hover {
-    color: #231f20; }
+h1, h2, h3, p, ol, ul {
+  padding-bottom: 24px; }
 
-/* line 31, ../sass/main.scss */
-h2 {
+/* line 26, ../sass/main.scss */
+h1, h2, h3 {
+  font-weight: bold; }
+
+/* line 29, ../sass/main.scss */
+h1 {
+  font-size: 30px;
+  line-height: 36px; }
+  /* line 33, ../sass/main.scss */
+  h1 a, h1 a:visited, h1 a:focus, h1 a:hover {
+    color: #231f20;
+    text-decoration: none;
+    -moz-transition-property: color;
+    -webkit-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+    -moz-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s; }
+  /* line 39, ../sass/main.scss */
+  h1 a:focus, h1 a:hover {
+    color: #335499; }
+
+/* line 43, ../sass/main.scss */
+h2, h3 {
   font-size: 22px; }
 
-/* line 34, ../sass/main.scss */
-.container {
-  width: 960px;
-  margin: auto; }
-
-/* line 38, ../sass/main.scss */
+/* line 46, ../sass/main.scss */
 .right {
   float: right; }
 
-/* line 41, ../sass/main.scss */
+/* line 49, ../sass/main.scss */
 .clear {
   clear: both; }
 
-/* line 44, ../sass/main.scss */
+/* line 52, ../sass/main.scss */
 #content {
   margin-top: 64px; }

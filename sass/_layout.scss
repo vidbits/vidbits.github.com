@@ -1,0 +1,22 @@
+$left-column-width:   460px;
+$right-column-width:  350px;
+$column-padding:      $baseline * 4;
+$container-width:     $left-column-width + $right-column-width + $column-padding;
+
+.container{
+  width: $container-width;
+  margin: auto;
+}
+.column {
+  float: left;
+  overflow: hidden;
+}
+#left-column {
+  @extend .column;
+  width: $left-column-width;
+  padding-right: $column-padding;
+}
+#right-column {
+  @extend .column;
+  width: $right-column-width;
+}
